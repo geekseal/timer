@@ -1,0 +1,157 @@
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border-style: none;
+    font-family: inherit;
+}
+
+/* typo */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+
+body {
+    font-family: 'Pretendard';
+}
+
+/* layout */
+header {
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+header .img-logo {
+    width: 244px;
+    vertical-align: top;
+}
+
+#app {
+    width: 400px;
+    height: 360px;
+    margin: 0 auto 60px;
+    padding: 48px 44px 40px;
+}
+
+#app .txt-title {
+    padding-bottom: 23px;
+    border-bottom: 1px solid #5B75B4;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+#app .txt-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #3D538A;
+    position: absolute;
+    bottom: 0;
+}
+
+#app .wrap-timer {
+    /* background-color: yellow; */
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.wrap-timer figure {
+    /* background-color: tomato; */
+    position: relative;
+}
+
+.wrap-timer .hour::after,
+.wrap-timer .minute::after {
+    content: url(../images/icon/dot.png);
+    position: absolute;
+    top: 40px;
+    left: 88px;
+    display: block;
+}
+
+.wrap-timer figure figcaption {
+    text-align: center;
+}
+
+.wrap-timer .timebox {
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+}
+
+.wrap-btns {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.icon {
+    width: 16px;
+    vertical-align: top;
+    margin-right: 6px;
+}
+
+footer {
+    text-align: center;    
+}
+
+
+/* design */
+body {
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+    background-attachment: fixed;
+}
+
+#app {
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+}
+
+#app .txt-title {
+    color: white;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.wrap-timer figcaption {
+    color: #A5B6EE;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.wrap-timer .timebox {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.btn {
+    padding: 16px 23px 15px;
+    background: #324577;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    color: #617199;
+}
+
+footer .txt-copyright {
+    font-size: 14px;
+    line-height: 17px;
+    color: #8596BF;
+}
+
